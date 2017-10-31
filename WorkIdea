@@ -1,0 +1,46 @@
+1)загрузка приложения
+                   reducer SET_STATE
+   bundle.js:27345 mapStateToProps
+   bundle.js:27331 AppView render
+   bundle.js:27201 PhoneForm constructor
+   bundle.js:27222 PhoneForm render
+   bundle.js:27294 PhonesList constructor
+   bundle.js:27303 PhonesList render
+   bundle.js:27245 PhoneItem constructor
+   bundle.js:27262 PhoneItem render
+   bundle.js:27245 PhoneItem constructor
+   bundle.js:27262 PhoneItem render
+
+    Сперва инициализируетс состояние хранилища, затем оно связывается с props,
+    Затем отрисовывается компонент и все дочерние компоненты
+
+2)добавление записи
+                       PhoneForm onClick
+       bundle.js:22165 reducer ADD_PHONE
+       bundle.js:27345 mapStateToProps
+       bundle.js:27331 AppView render
+       bundle.js:27222 PhoneForm render
+       bundle.js:27303 PhonesList render
+       bundle.js:27262 PhoneItem render
+       bundle.js:27245 PhoneItem constructor
+       bundle.js:27262 PhoneItem render
+
+    Событие клика ловится компонентом.
+    затем данное добавляется в хранилище
+    затем хранилище связывается с props
+    Затем все перерисовывается
+
+
+3) удаление записи
+                       PhoneItem onClick
+       bundle.js:22170 reducer DELETE_PHONE
+       bundle.js:27345 mapStateToProps
+       bundle.js:27331 AppView render
+       bundle.js:27222 PhoneForm render
+       bundle.js:27303 PhonesList render
+       2bundle.js:27262 PhoneItem render
+
+    Событие клика ловится компонентом
+    затем данное удаляется из хранилища
+    затем хранилище связывается с props
+    Затем все перерисовывается
